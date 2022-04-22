@@ -3,6 +3,7 @@ import UserData from "./UserDataCard";
 
 import { DataFromServer, EmptyProps, ListingState } from "../types/Types";
 import Loading from "./Loading";
+import Footer from "./Footer";
 
 class Listing extends React.Component<EmptyProps, ListingState> {
   // Constructor
@@ -87,7 +88,7 @@ class Listing extends React.Component<EmptyProps, ListingState> {
           ))}
         </div>
         {/* For Next Previous Button */}
-        <hr />
+
         <div
           className="container d-flex justify-content-between"
           style={{ display: "block", padding: 30 }}
@@ -111,6 +112,7 @@ class Listing extends React.Component<EmptyProps, ListingState> {
             Next &rarr;
           </button>
         </div>
+        <Footer />
       </div>
     );
   }
